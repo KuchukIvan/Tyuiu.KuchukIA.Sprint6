@@ -36,9 +36,10 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             textBoxValueX_KIA = new TextBox();
             textBoxVarX_KIA = new TextBox();
             groupBoxResult_KIA = new GroupBox();
+            textBox1 = new TextBox();
+            buttonDone_KIA = new Button();
             textBoxResult_KIA = new TextBox();
             buttonHelp_KIA = new Button();
-            buttonDone_KIA = new Button();
             groupBoxTask_KIA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_KIA).BeginInit();
             groupBoxInput_KIA.SuspendLayout();
@@ -51,16 +52,15 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             groupBoxTask_KIA.Controls.Add(textBoxTask_KIA);
             groupBoxTask_KIA.Location = new Point(30, 12);
             groupBoxTask_KIA.Name = "groupBoxTask_KIA";
-            groupBoxTask_KIA.Size = new Size(736, 275);
+            groupBoxTask_KIA.Size = new Size(572, 275);
             groupBoxTask_KIA.TabIndex = 0;
             groupBoxTask_KIA.TabStop = false;
             groupBoxTask_KIA.Text = "Условие";
-            groupBoxTask_KIA.Enter += groupBox1_Enter;
             // 
             // pictureBoxFormula_KIA
             // 
             pictureBoxFormula_KIA.Image = Properties.Resources.Снимок_экрана_2025_11_15_004254;
-            pictureBoxFormula_KIA.Location = new Point(595, 43);
+            pictureBoxFormula_KIA.Location = new Point(413, 42);
             pictureBoxFormula_KIA.Name = "pictureBoxFormula_KIA";
             pictureBoxFormula_KIA.Size = new Size(135, 40);
             pictureBoxFormula_KIA.TabIndex = 1;
@@ -73,10 +73,9 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             textBoxTask_KIA.Multiline = true;
             textBoxTask_KIA.Name = "textBoxTask_KIA";
             textBoxTask_KIA.ReadOnly = true;
-            textBoxTask_KIA.Size = new Size(713, 223);
+            textBoxTask_KIA.Size = new Size(542, 219);
             textBoxTask_KIA.TabIndex = 0;
             textBoxTask_KIA.Text = "Вычислить выражение по формуле";
-            textBoxTask_KIA.TextChanged += textBox1_TextChanged;
             // 
             // groupBoxInput_KIA
             // 
@@ -84,43 +83,63 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             groupBoxInput_KIA.Controls.Add(textBoxVarX_KIA);
             groupBoxInput_KIA.Location = new Point(30, 293);
             groupBoxInput_KIA.Name = "groupBoxInput_KIA";
-            groupBoxInput_KIA.Size = new Size(488, 145);
+            groupBoxInput_KIA.Size = new Size(391, 145);
             groupBoxInput_KIA.TabIndex = 1;
             groupBoxInput_KIA.TabStop = false;
             groupBoxInput_KIA.Text = "Ввод данных";
-            groupBoxInput_KIA.Enter += groupBox2_Enter;
             // 
             // textBoxValueX_KIA
             // 
-            textBoxValueX_KIA.BackColor = Color.WhiteSmoke;
+            textBoxValueX_KIA.BackColor = SystemColors.Control;
             textBoxValueX_KIA.BorderStyle = BorderStyle.None;
             textBoxValueX_KIA.ForeColor = SystemColors.WindowText;
-            textBoxValueX_KIA.Location = new Point(17, 80);
+            textBoxValueX_KIA.Location = new Point(17, 30);
             textBoxValueX_KIA.Name = "textBoxValueX_KIA";
             textBoxValueX_KIA.Size = new Size(100, 16);
             textBoxValueX_KIA.TabIndex = 1;
             textBoxValueX_KIA.Text = "Переменная X:";
-            textBoxValueX_KIA.BorderStyleChanged += textBox1_BorderStyleChanged;
-            textBoxValueX_KIA.TextChanged += textBox1_TextChanged_1;
             // 
             // textBoxVarX_KIA
             // 
-            textBoxVarX_KIA.Location = new Point(17, 96);
+            textBoxVarX_KIA.Location = new Point(17, 52);
             textBoxVarX_KIA.Name = "textBoxVarX_KIA";
-            textBoxVarX_KIA.Size = new Size(100, 23);
+            textBoxVarX_KIA.Size = new Size(124, 23);
             textBoxVarX_KIA.TabIndex = 0;
-            textBoxVarX_KIA.TextChanged += textBoxVarX_TextChanged;
             textBoxVarX_KIA.KeyPress += textBoxVarX_KeyPress;
             // 
             // groupBoxResult_KIA
             // 
+            groupBoxResult_KIA.Controls.Add(textBox1);
+            groupBoxResult_KIA.Controls.Add(buttonDone_KIA);
             groupBoxResult_KIA.Controls.Add(textBoxResult_KIA);
-            groupBoxResult_KIA.Location = new Point(524, 293);
+            groupBoxResult_KIA.Controls.Add(buttonHelp_KIA);
+            groupBoxResult_KIA.Location = new Point(427, 293);
             groupBoxResult_KIA.Name = "groupBoxResult_KIA";
-            groupBoxResult_KIA.Size = new Size(232, 96);
+            groupBoxResult_KIA.Size = new Size(175, 145);
             groupBoxResult_KIA.TabIndex = 2;
             groupBoxResult_KIA.TabStop = false;
             groupBoxResult_KIA.Text = "Вывод данных";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.Control;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.ForeColor = SystemColors.WindowText;
+            textBox1.Location = new Point(6, 30);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 16);
+            textBox1.TabIndex = 5;
+            textBox1.Text = "Результат:";
+            // 
+            // buttonDone_KIA
+            // 
+            buttonDone_KIA.Location = new Point(60, 96);
+            buttonDone_KIA.Name = "buttonDone_KIA";
+            buttonDone_KIA.Size = new Size(109, 43);
+            buttonDone_KIA.TabIndex = 4;
+            buttonDone_KIA.Text = "Выполнить";
+            buttonDone_KIA.UseVisualStyleBackColor = true;
+            buttonDone_KIA.Click += buttonDone_Click;
             // 
             // textBoxResult_KIA
             // 
@@ -128,14 +147,13 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             textBoxResult_KIA.Multiline = true;
             textBoxResult_KIA.Name = "textBoxResult_KIA";
             textBoxResult_KIA.ReadOnly = true;
-            textBoxResult_KIA.Size = new Size(220, 38);
+            textBoxResult_KIA.Size = new Size(163, 38);
             textBoxResult_KIA.TabIndex = 0;
-            textBoxResult_KIA.TextChanged += textBoxResult_TextChanged;
             // 
             // buttonHelp_KIA
             // 
             buttonHelp_KIA.FlatStyle = FlatStyle.Flat;
-            buttonHelp_KIA.Location = new Point(530, 395);
+            buttonHelp_KIA.Location = new Point(6, 96);
             buttonHelp_KIA.Name = "buttonHelp_KIA";
             buttonHelp_KIA.Size = new Size(48, 43);
             buttonHelp_KIA.TabIndex = 3;
@@ -143,27 +161,21 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             buttonHelp_KIA.UseVisualStyleBackColor = true;
             buttonHelp_KIA.Click += buttonHelp_Click;
             // 
-            // buttonDone_KIA
-            // 
-            buttonDone_KIA.Location = new Point(584, 395);
-            buttonDone_KIA.Name = "buttonDone_KIA";
-            buttonDone_KIA.Size = new Size(172, 43);
-            buttonDone_KIA.TabIndex = 4;
-            buttonDone_KIA.Text = "Выполнить";
-            buttonDone_KIA.UseVisualStyleBackColor = true;
-            buttonDone_KIA.Click += buttonDone_Click;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(buttonDone_KIA);
-            Controls.Add(buttonHelp_KIA);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(612, 448);
             Controls.Add(groupBoxResult_KIA);
             Controls.Add(groupBoxInput_KIA);
             Controls.Add(groupBoxTask_KIA);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 0 | Вариант 24 | Кучук И.А. ";
             groupBoxTask_KIA.ResumeLayout(false);
             groupBoxTask_KIA.PerformLayout();
@@ -186,12 +198,12 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
         private GroupBox groupBoxInput_KIA;
         private TextBox textBox4;
         private TextBox textBox3;
-        private TextBox textBox2;
         private GroupBox groupBoxResult_KIA;
         private TextBox textBoxVarX_KIA;
         private TextBox textBoxResult_KIA;
         private Button buttonHelp_KIA;
         private Button buttonDone_KIA;
         private TextBox textBoxValueX_KIA;
+        private TextBox textBox1;
     }
 }

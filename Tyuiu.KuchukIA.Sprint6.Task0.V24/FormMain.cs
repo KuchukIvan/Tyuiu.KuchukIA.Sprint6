@@ -8,25 +8,12 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ПИНб-25-1 Кучук Иван Александрович", "Сообщение");
+            MessageBox.Show("Таск 0 выполнил студент группы ПИНб-25-1 Кучук Иван Александрович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
@@ -41,6 +28,7 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             }
         }
 
+
         private void textBoxVarX_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != 8))
@@ -49,24 +37,6 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             }
         }
 
-        private void textBoxVarX_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxResult_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_BorderStyleChanged(object sender, EventArgs e)
-        {
-
-        }
+  
     }
 }
