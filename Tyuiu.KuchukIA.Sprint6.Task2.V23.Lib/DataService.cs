@@ -16,7 +16,7 @@ namespace Tyuiu.KuchukIA.Sprint6.Task2.V23.Lib
 
                 if (2 * x - 2 == 0)
                 {
-                    res[count] = double.NaN;
+                    res[count] = 0;
                 }
 
                 else

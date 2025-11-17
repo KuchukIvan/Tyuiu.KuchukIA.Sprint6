@@ -21,7 +21,7 @@ namespace Tyuiu.KuchukIA.Sprint6.Task2.V23.Test
             wait[3] = 7.74;
             wait[4] = 5.36;
             wait[5] = 2.5;
-            wait[6] = double.NaN;
+            wait[6] = 0.0;
             wait[7] = 0.79;
             wait[8] = -1.75;
             wait[9] = -3.78;
