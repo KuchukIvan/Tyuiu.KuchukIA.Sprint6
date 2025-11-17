@@ -39,8 +39,8 @@
             X = new DataGridViewTextBoxColumn();
             Y = new DataGridViewTextBoxColumn();
             groupBoxInput_KIA = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            textBoxForStopStep_KIA = new TextBox();
+            textBoxForStartStep_KIA = new TextBox();
             textBoxStopStep_KIA = new TextBox();
             textBoxStartStep_KIA = new TextBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -110,14 +110,18 @@
             // 
             // dataGridViewFunction_KIA
             // 
+            dataGridViewFunction_KIA.AllowUserToResizeColumns = false;
+            dataGridViewFunction_KIA.AllowUserToResizeRows = false;
             dataGridViewFunction_KIA.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewFunction_KIA.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewFunction_KIA.Columns.AddRange(new DataGridViewColumn[] { X, Y });
             dataGridViewFunction_KIA.Location = new Point(6, 22);
             dataGridViewFunction_KIA.Name = "dataGridViewFunction_KIA";
+            dataGridViewFunction_KIA.ReadOnly = true;
             dataGridViewFunction_KIA.RowHeadersVisible = false;
             dataGridViewFunction_KIA.Size = new Size(133, 359);
             dataGridViewFunction_KIA.TabIndex = 0;
+            dataGridViewFunction_KIA.TabStop = false;
             dataGridViewFunction_KIA.CellContentClick += dataGridView1_CellContentClick;
             // 
             // X
@@ -136,8 +140,8 @@
             // 
             // groupBoxInput_KIA
             // 
-            groupBoxInput_KIA.Controls.Add(textBox2);
-            groupBoxInput_KIA.Controls.Add(textBox1);
+            groupBoxInput_KIA.Controls.Add(textBoxForStopStep_KIA);
+            groupBoxInput_KIA.Controls.Add(textBoxForStartStep_KIA);
             groupBoxInput_KIA.Controls.Add(textBoxStopStep_KIA);
             groupBoxInput_KIA.Controls.Add(textBoxStartStep_KIA);
             groupBoxInput_KIA.Location = new Point(12, 327);
@@ -148,25 +152,25 @@
             groupBoxInput_KIA.Text = "Ввод данных";
             groupBoxInput_KIA.Enter += groupBoxInput_KIA_Enter;
             // 
-            // textBox2
+            // textBoxForStopStep_KIA
             // 
-            textBox2.BackColor = SystemColors.Control;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(137, 22);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 16);
-            textBox2.TabIndex = 6;
-            textBox2.Text = "Конец шага:";
+            textBoxForStopStep_KIA.BackColor = SystemColors.Control;
+            textBoxForStopStep_KIA.BorderStyle = BorderStyle.None;
+            textBoxForStopStep_KIA.Location = new Point(137, 22);
+            textBoxForStopStep_KIA.Name = "textBoxForStopStep_KIA";
+            textBoxForStopStep_KIA.Size = new Size(100, 16);
+            textBoxForStopStep_KIA.TabIndex = 6;
+            textBoxForStopStep_KIA.Text = "Конец шага:";
             // 
-            // textBox1
+            // textBoxForStartStep_KIA
             // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(6, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 16);
-            textBox1.TabIndex = 5;
-            textBox1.Text = "Старт шага:";
+            textBoxForStartStep_KIA.BackColor = SystemColors.Control;
+            textBoxForStartStep_KIA.BorderStyle = BorderStyle.None;
+            textBoxForStartStep_KIA.Location = new Point(6, 22);
+            textBoxForStartStep_KIA.Name = "textBoxForStartStep_KIA";
+            textBoxForStartStep_KIA.Size = new Size(100, 16);
+            textBoxForStartStep_KIA.TabIndex = 5;
+            textBoxForStartStep_KIA.Text = "Старт шага:";
             // 
             // textBoxStopStep_KIA
             // 
@@ -204,6 +208,9 @@
             buttonDone_KIA.Text = "Выполнить";
             buttonDone_KIA.UseVisualStyleBackColor = false;
             buttonDone_KIA.Click += buttonDone_KIA_Click;
+            buttonDone_KIA.MouseDown += buttonDone_KIA_MouseDown;
+            buttonDone_KIA.MouseEnter += buttonDone_KIA_MouseEnter;
+            buttonDone_KIA.MouseLeave += buttonDone_KIA_MouseLeave;
             // 
             // MainForm
             // 
@@ -246,8 +253,8 @@
         private Button buttonHelp_KIA;
         private TextBox textBoxStopStep_KIA;
         private TextBox textBoxStartStep_KIA;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox textBoxForStopStep_KIA;
+        private TextBox textBoxForStartStep_KIA;
         private DataGridViewTextBoxColumn X;
         private DataGridViewTextBoxColumn Y;
     }

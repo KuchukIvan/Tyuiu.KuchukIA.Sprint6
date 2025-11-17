@@ -33,10 +33,10 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             pictureBoxFormula_KIA = new PictureBox();
             textBoxTask_KIA = new TextBox();
             groupBoxInput_KIA = new GroupBox();
-            textBoxValueX_KIA = new TextBox();
+            textBoxForVarX_KIA = new TextBox();
             textBoxVarX_KIA = new TextBox();
             groupBoxResult_KIA = new GroupBox();
-            textBox1 = new TextBox();
+            textBoxForResult_KIA = new TextBox();
             buttonDone_KIA = new Button();
             textBoxResult_KIA = new TextBox();
             buttonHelp_KIA = new Button();
@@ -76,10 +76,11 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             textBoxTask_KIA.Size = new Size(542, 219);
             textBoxTask_KIA.TabIndex = 0;
             textBoxTask_KIA.Text = "Вычислить выражение по формуле";
+            textBoxTask_KIA.TextChanged += textBoxTask_KIA_TextChanged;
             // 
             // groupBoxInput_KIA
             // 
-            groupBoxInput_KIA.Controls.Add(textBoxValueX_KIA);
+            groupBoxInput_KIA.Controls.Add(textBoxForVarX_KIA);
             groupBoxInput_KIA.Controls.Add(textBoxVarX_KIA);
             groupBoxInput_KIA.Location = new Point(30, 293);
             groupBoxInput_KIA.Name = "groupBoxInput_KIA";
@@ -88,16 +89,16 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             groupBoxInput_KIA.TabStop = false;
             groupBoxInput_KIA.Text = "Ввод данных";
             // 
-            // textBoxValueX_KIA
+            // textBoxForVarX_KIA
             // 
-            textBoxValueX_KIA.BackColor = SystemColors.Control;
-            textBoxValueX_KIA.BorderStyle = BorderStyle.None;
-            textBoxValueX_KIA.ForeColor = SystemColors.WindowText;
-            textBoxValueX_KIA.Location = new Point(17, 30);
-            textBoxValueX_KIA.Name = "textBoxValueX_KIA";
-            textBoxValueX_KIA.Size = new Size(100, 16);
-            textBoxValueX_KIA.TabIndex = 1;
-            textBoxValueX_KIA.Text = "Переменная X:";
+            textBoxForVarX_KIA.BackColor = SystemColors.Control;
+            textBoxForVarX_KIA.BorderStyle = BorderStyle.None;
+            textBoxForVarX_KIA.ForeColor = SystemColors.WindowText;
+            textBoxForVarX_KIA.Location = new Point(17, 30);
+            textBoxForVarX_KIA.Name = "textBoxForVarX_KIA";
+            textBoxForVarX_KIA.Size = new Size(100, 16);
+            textBoxForVarX_KIA.TabIndex = 1;
+            textBoxForVarX_KIA.Text = "Переменная X:";
             // 
             // textBoxVarX_KIA
             // 
@@ -109,7 +110,7 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             // 
             // groupBoxResult_KIA
             // 
-            groupBoxResult_KIA.Controls.Add(textBox1);
+            groupBoxResult_KIA.Controls.Add(textBoxForResult_KIA);
             groupBoxResult_KIA.Controls.Add(buttonDone_KIA);
             groupBoxResult_KIA.Controls.Add(textBoxResult_KIA);
             groupBoxResult_KIA.Controls.Add(buttonHelp_KIA);
@@ -120,16 +121,16 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             groupBoxResult_KIA.TabStop = false;
             groupBoxResult_KIA.Text = "Вывод данных";
             // 
-            // textBox1
+            // textBoxForResult_KIA
             // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.ForeColor = SystemColors.WindowText;
-            textBox1.Location = new Point(6, 30);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 16);
-            textBox1.TabIndex = 5;
-            textBox1.Text = "Результат:";
+            textBoxForResult_KIA.BackColor = SystemColors.Control;
+            textBoxForResult_KIA.BorderStyle = BorderStyle.None;
+            textBoxForResult_KIA.ForeColor = SystemColors.WindowText;
+            textBoxForResult_KIA.Location = new Point(6, 30);
+            textBoxForResult_KIA.Name = "textBoxForResult_KIA";
+            textBoxForResult_KIA.Size = new Size(100, 16);
+            textBoxForResult_KIA.TabIndex = 5;
+            textBoxForResult_KIA.Text = "Результат:";
             // 
             // buttonDone_KIA
             // 
@@ -203,7 +204,7 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
         private TextBox textBoxResult_KIA;
         private Button buttonHelp_KIA;
         private Button buttonDone_KIA;
-        private TextBox textBoxValueX_KIA;
-        private TextBox textBox1;
+        private TextBox textBoxForVarX_KIA;
+        private TextBox textBoxForResult_KIA;
     }
 }

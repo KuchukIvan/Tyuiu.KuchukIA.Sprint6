@@ -37,6 +37,9 @@ namespace Tyuiu.KuchukIA.Sprint6.Task0.V24
             }
         }
 
-  
+        private void textBoxTask_KIA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

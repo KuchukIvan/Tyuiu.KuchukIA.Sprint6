@@ -33,8 +33,8 @@
             groupBoxOutput_KIA = new GroupBox();
             textBoxResult_KIA = new TextBox();
             groupBoxInput_KIA = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            textBoxForStopStep_KIA = new TextBox();
+            textBoxForStartStep_KIA = new TextBox();
             textBoxStopStep_KIA = new TextBox();
             textBoxStartStep_KIA = new TextBox();
             buttonHelp_KIA = new Button();
@@ -89,8 +89,8 @@
             // 
             // groupBoxInput_KIA
             // 
-            groupBoxInput_KIA.Controls.Add(textBox2);
-            groupBoxInput_KIA.Controls.Add(textBox1);
+            groupBoxInput_KIA.Controls.Add(textBoxForStopStep_KIA);
+            groupBoxInput_KIA.Controls.Add(textBoxForStartStep_KIA);
             groupBoxInput_KIA.Controls.Add(textBoxStopStep_KIA);
             groupBoxInput_KIA.Controls.Add(textBoxStartStep_KIA);
             groupBoxInput_KIA.Location = new Point(12, 362);
@@ -100,25 +100,25 @@
             groupBoxInput_KIA.TabStop = false;
             groupBoxInput_KIA.Text = "Ввод данных";
             // 
-            // textBox2
+            // textBoxForStopStep_KIA
             // 
-            textBox2.BackColor = SystemColors.Control;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(148, 22);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 16);
-            textBox2.TabIndex = 3;
-            textBox2.Text = "Конец шага:";
+            textBoxForStopStep_KIA.BackColor = SystemColors.Control;
+            textBoxForStopStep_KIA.BorderStyle = BorderStyle.None;
+            textBoxForStopStep_KIA.Location = new Point(148, 22);
+            textBoxForStopStep_KIA.Name = "textBoxForStopStep_KIA";
+            textBoxForStopStep_KIA.Size = new Size(100, 16);
+            textBoxForStopStep_KIA.TabIndex = 3;
+            textBoxForStopStep_KIA.Text = "Конец шага:";
             // 
-            // textBox1
+            // textBoxForStartStep_KIA
             // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(6, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 16);
-            textBox1.TabIndex = 2;
-            textBox1.Text = "Старт шага:";
+            textBoxForStartStep_KIA.BackColor = SystemColors.Control;
+            textBoxForStartStep_KIA.BorderStyle = BorderStyle.None;
+            textBoxForStartStep_KIA.Location = new Point(6, 22);
+            textBoxForStartStep_KIA.Name = "textBoxForStartStep_KIA";
+            textBoxForStartStep_KIA.Size = new Size(100, 16);
+            textBoxForStartStep_KIA.TabIndex = 2;
+            textBoxForStartStep_KIA.Text = "Старт шага:";
             // 
             // textBoxStopStep_KIA
             // 
@@ -189,7 +189,7 @@
         private TextBox textBoxStopStep_KIA;
         private TextBox textBoxStartStep_KIA;
         private TextBox textBoxResult_KIA;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBoxForStartStep_KIA;
+        private TextBox textBoxForStopStep_KIA;
     }
 }
