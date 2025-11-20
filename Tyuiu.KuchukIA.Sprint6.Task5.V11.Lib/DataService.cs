@@ -5,25 +5,34 @@ namespace Tyuiu.KuchukIA.Sprint6.Task5.V11.Lib
 {
     public class DataService : ISprint6Task5V11
     {
-        public int len = 0;
 
+        public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
-            string allText = File.ReadAllText(path);
-            string[] strNums = allText.Split(' ');
-
-            int arrayLength = strNums.Length;
-            double[] nums = new double[arrayLength];
-
-            for (int i = 0; i < arrayLength; i++)
+            using (StreamReader reader = new StreamReader(path))
             {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    len++;
+                }
+            }
 
-                string numberStr = strNums[i].Replace('.', ',');
-                nums[i] = Convert.ToDouble(numberStr);
+            double[] nums = new double[len];
+
+            int index = 0;
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    nums[index] = Convert.ToDouble(line);
+                    index++;
+                }
             }
 
             nums = nums.Where(val => val % 5 == 0).ToArray();
-            len = nums.Length;
+
             return nums;
         }
     }
