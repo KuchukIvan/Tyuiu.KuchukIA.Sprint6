@@ -8,9 +8,7 @@ namespace Tyuiu.KuchukIA.Sprint5.Task5.V18.Test
         [TestMethod]
         public void CheckExistsFile()
         {
-            string file = "InPutDataFileTask5V11.txt";
-            string directory = @"C:\\DataSprint6";
-            string path = Path.Combine(directory, file);
+            string path = @"C:\DataSprint6\InPutDataFileTask5V11.txt";
 
             FileInfo fileInfo = new FileInfo(path);
 
