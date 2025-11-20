@@ -1,4 +1,3 @@
-using System.IO;
 using Tyuiu.KuchukIA.Sprint6.Task5.V11.Lib;
 namespace Tyuiu.KuchukIA.Sprint6.Task5.V11
 {

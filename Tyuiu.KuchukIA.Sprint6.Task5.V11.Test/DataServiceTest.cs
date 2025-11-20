@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using Tyuiu.KuchukIA.Sprint5.Task6.V11.Lib;
+using Tyuiu.KuchukIA.Sprint6.Task5.V11.Lib;
 namespace Tyuiu.KuchukIA.Sprint5.Task5.V18.Test
 {
     [TestClass]
