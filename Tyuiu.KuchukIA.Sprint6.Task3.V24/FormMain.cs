@@ -2,9 +2,9 @@ using System.Drawing.Drawing2D;
 using Tyuiu.KuchukIA.Sprint6.Task3.V24.Lib;
 namespace Tyuiu.KuchukIA.Sprint6.Task3.V24
 {
-    public partial class MainForm : Form
+    public partial class FormMain : Form
     {
-        public MainForm()
+        public FormMain()
         {
             InitializeComponent();
         }

@@ -1,9 +1,9 @@
 using Tyuiu.KuchukIA.Sprint6.Task2.V23.Lib;
 namespace Tyuiu.KuchukIA.Sprint6.Task2.V23
 {
-    public partial class MainForm : Form
+    public partial class FormMain : Form
     {
-        public MainForm()
+        public FormMain()
         {
             InitializeComponent();
         }

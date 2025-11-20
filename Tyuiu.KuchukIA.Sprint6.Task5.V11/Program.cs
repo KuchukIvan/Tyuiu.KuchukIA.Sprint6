@@ -1,4 +1,4 @@
-namespace Tyuiu.KuchukIA.Sprint6.Task2.V23
+namespace Tyuiu.KuchukIA.Sprint6.Task5.V11
 {
     internal static class Program
     {

@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KuchukIA.Sprint6.Task3.V24
 {
-    partial class MainForm
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
