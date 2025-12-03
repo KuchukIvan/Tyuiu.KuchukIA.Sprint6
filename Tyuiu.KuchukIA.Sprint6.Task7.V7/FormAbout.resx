@@ -117,16 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip_KIA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>195, 17</value>
+  <metadata name="labelInfo_KIA.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <data name="textBoxTask_KIA.Text" xml:space="preserve">
-    <value>Дан файл InPutFileTask6V11.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести предпоследнее слово каждой строки в результирующею строку и вывести ее в textBoxOut.</value>
+  <data name="labelInfo_KIA.Text" xml:space="preserve">
+    <value>Разработчик: Кучук И.А.
+группа ПИНб-25-1
+
+Программа разработана в рамках изучения языка C#
+
+Тюменский индустриальный университет (c) 2025
+Высшая школа цифровых технологий (c) 2025
+
+Внутреннее имя: Tyuiu.KuchukIA.Sprint6.Task6.V11</value>
   </data>
-  <metadata name="openFileDialogTask_KIA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+  <metadata name="pictureBoxAvatar_KIA.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

@@ -117,16 +117,66 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip_KIA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>195, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonHelp_KIA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAkpJREFUaEPt
+        mS1ywzAQhQN7ifwcoTCwMLC3KA3LEQoLCwsDA3OEwsDAHKOwfTvz0nHWK0srr+N2xt/MEq/27dqWLEua
+        TUxMxLFYLHbL5fIE+07YGW1e2PxvgILejEKLTGIpc39QwF4X1MP2lB2e1Wq1NgoIMWg/Mc0wIMlRJ1V2
+        ns/nz2zeAgVu0KZrjIgd2TwWCJ9Vol9DYcmiU/BmTD3Yhc1igKBZPAbhlk2qka+SpQ2LuQkImd2G7hDw
+        Nh6sHLADm9QBYWvAftEdjmirXNI913T70WJidA1GWE4EHvoI1cYmupO/K2kRDLYdXUXoeF4uwhrYdJUh
+        U3wvARAdj5pe6cqjg/Fa3TOk1uDlYiRntUZ1YDBVdeBVbVXgJ113B7lvfjtkbNCVBg0vzaCa7hOF/Fc1
+        a4HlZ2cVMFr3ueKuxx2QYDQdd0CC0XTcAQlG03EHJBhNxx2QYDQdNLpZvHQtEbtoaojxsgtjNj7TlQaT
+        heztNINOdLlQGlU3ILmbGkUTmfU7S5eLUTV0IG5qQ1cxWoOXi5Gc1Rp4Ve/VwSQ6XmqiqwxDwLUDoeN5
+        uQhjHLofgBTQWlLK+KA7i47l5SzWGITV7U4YQv4n4SQ0J55Ga1UEG3JbReeSt/5Idx0QaXUlMU93ypHo
+        NmIxu9YQulnkXK1oYskgGpY2LD/reoCgeRNieILRm7uxxV+BcO5Q49T178QlYm57fdjDDjy5IQ84+g1Y
+        D0j4P4+YNBiEH0ZBRYbY8Q75NPIp5C9A8iQHdpE2DJmYmOjNbPYDOR3P/dts3MwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="buttonDone_KIA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAMZJREFUaEPt
+        mO0JwzAMRL1CF7DjX52nE3WjztMpukK/UKGEo6QxJHpwDw6C48AJkousYowxxhgyrbVrXDJ5FnAPnWKJ
+        xVcBL91imcOsgLemaTrH7fyoAj6qtR5iW16U8ZkusTUnwrBU7/0Yj+RCmf2hfJErTC5RnsgV5pYqR+QK
+        Y39p98hVptZot8hVZga0feQKE8PaNHKVgVGRC+C+QtiPmByj6B8ZtpXgNnPkdpp7oMEeKcmHevRYBTvY
+        Yo8WjTHGGLOaUh6ZQafs+5uvGAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonOpenFile_KIA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAZ1JREFUaEPt
+        mcFtAzEMBF1CKri7EtNBSnAJKcvPPFNGIgKrQNhIJ5LH40sD7MMLccn1wx8/FouFjn3fv4p+rmrbtg9E
+        5tE75IpSS5SFId88K61Eb3mUUkrwUthmOKfq9hK8ELYZzml1awleBtsM57BuK8GLYJvhnJ5uKcFLYJvh
+        nJHCS/AC2GY450yhJTgcthnOmSmsBAfDNsM5GoWU4FDYZjhHK4z7iQrkHK0w7ic8cEL4vvDACeH7wgMn
+        hO8LD5wQvu9K4HEc79afwiv7ungD5fg6YynR7hLB9uMJbI+v0pbgOdh+rIG946s0JXgGth9L4NnxVbMS
+        /B62H22g5viqsxL8FrYfTaDl+KpRCX4H288s0HN8Va8Ev4HtZxYoR/CbUupN45XZJ2L+4Dew/WgC2xJy
+        qHjtjEi8tkTveKGdEcH2ow2UEvV4YTQnb8rbT3z8x2jOjTcwe26INzB7bog3MHtuiDcwe26INzB7bkh4
+        4ITwfeGBE8L3cWC2cIafEvLi0ES9cMY1OsEpwvoYSuAtf/YN9I21i8XilMfjFywHcGxyy1v5AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="buttonSaveFile_KIA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAXpJREFUaEPt
+        mTFOxDAQRVNyiiQ35RhbUnIkSso9BjirTzP6mfmxJ3GQ/KTXWDtvx2IXRTANBoPBvVmW5bv4c7bzPL/j
+        LfNgb3SmqZcowad9gytMuwSLX2XKJWwUx2nYvrX5EjaI4zRsn9l0CRvDcRq2v2f1JWwIx2nYvmfVJWwE
+        x2nYfiTGdJoDAbYfiTGd5kCA7UdiTKc5EGD7kRjTYZGeYi0dFukp1tJhkZ5iLR0W6SnW0mGRnmItHRbp
+        KdbSYZGeYi0dFukp1tJhEdXy8PVA5sW6rm/l/NO+7ohI6bCIIsYpuAidi0RCh0UiMepSewmM67CIZ/nY
+        fGA0ZHsta3hiVIdFPDEmUfNTwKgOi3hiTIY1PDGmwyKeGJNhDU+M6bCIJ8ZkWMMTYzos4nnwS/xgDU+M
+        6rBI5PblxPgut/01+qd3idrlN5HQYRFV+yixUc7/x6PEWWItnTLU5c/rOz6xlk7L5zVbrHQcXOKSfzHt
+        +IVVBoPB4JZM0y8emzoulXzctwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="textBoxTask_KIA.Text" xml:space="preserve">
-    <value>Дан файл InPutFileTask6V11.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести предпоследнее слово каждой строки в результирующею строку и вывести ее в textBoxOut.</value>
+    <value>Дан файл InPutFileTask7V7.csv в котором хранится матрица целочисленных значений. Загрузить файл через openFileDialog в объект dataGridViewIn. Изменить в пятой строке нечетные значения на 66. Результат вывести в объект dataGridViewOut. Сохранить результат в файл OutPutFileTask7.csv через saveFileDialog.</value>
   </data>
   <metadata name="openFileDialogTask_KIA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+  <metadata name="toolTipButton_KIA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>195, 17</value>
+  </metadata>
+  <metadata name="saveFileDialogMatrix_KIA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>345, 17</value>
   </metadata>
 </root>

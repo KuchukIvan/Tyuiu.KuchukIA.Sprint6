@@ -40,11 +40,11 @@
             openFileDialogTask_KIA = new OpenFileDialog();
             toolTip_KIA = new ToolTip(components);
             splitContainer1 = new SplitContainer();
-            splitter1 = new Splitter();
             groupBoxInput_KIA = new GroupBox();
-            groupBoxOutput_KIA = new GroupBox();
             textBoxInput_KIA = new TextBox();
+            groupBoxOutput_KIA = new GroupBox();
             textBoxOutput_KIA = new TextBox();
+            splitter1 = new Splitter();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             groupBoxTask_KIA.SuspendLayout();
@@ -134,6 +134,7 @@
             textBoxTask_KIA.Size = new Size(935, 75);
             textBoxTask_KIA.TabIndex = 0;
             textBoxTask_KIA.Text = resources.GetString("textBoxTask_KIA.Text");
+            textBoxTask_KIA.TextChanged += textBoxTask_KIA_TextChanged;
             // 
             // openFileDialogTask_KIA
             // 
@@ -162,14 +163,6 @@
             splitContainer1.SplitterDistance = 362;
             splitContainer1.TabIndex = 2;
             // 
-            // splitter1
-            // 
-            splitter1.Location = new Point(0, 0);
-            splitter1.Name = "splitter1";
-            splitter1.Size = new Size(3, 469);
-            splitter1.TabIndex = 0;
-            splitter1.TabStop = false;
-            // 
             // groupBoxInput_KIA
             // 
             groupBoxInput_KIA.Controls.Add(textBoxInput_KIA);
@@ -180,6 +173,15 @@
             groupBoxInput_KIA.TabIndex = 0;
             groupBoxInput_KIA.TabStop = false;
             groupBoxInput_KIA.Text = "Ввод:";
+            // 
+            // textBoxInput_KIA
+            // 
+            textBoxInput_KIA.Dock = DockStyle.Fill;
+            textBoxInput_KIA.Location = new Point(3, 19);
+            textBoxInput_KIA.Multiline = true;
+            textBoxInput_KIA.Name = "textBoxInput_KIA";
+            textBoxInput_KIA.Size = new Size(356, 447);
+            textBoxInput_KIA.TabIndex = 0;
             // 
             // groupBoxOutput_KIA
             // 
@@ -192,15 +194,6 @@
             groupBoxOutput_KIA.TabStop = false;
             groupBoxOutput_KIA.Text = "Вывод:";
             // 
-            // textBoxInput_KIA
-            // 
-            textBoxInput_KIA.Dock = DockStyle.Fill;
-            textBoxInput_KIA.Location = new Point(3, 19);
-            textBoxInput_KIA.Multiline = true;
-            textBoxInput_KIA.Name = "textBoxInput_KIA";
-            textBoxInput_KIA.Size = new Size(356, 447);
-            textBoxInput_KIA.TabIndex = 0;
-            // 
             // textBoxOutput_KIA
             // 
             textBoxOutput_KIA.Dock = DockStyle.Fill;
@@ -209,6 +202,14 @@
             textBoxOutput_KIA.Name = "textBoxOutput_KIA";
             textBoxOutput_KIA.Size = new Size(566, 447);
             textBoxOutput_KIA.TabIndex = 0;
+            // 
+            // splitter1
+            // 
+            splitter1.Location = new Point(0, 0);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(3, 469);
+            splitter1.TabIndex = 0;
+            splitter1.TabStop = false;
             // 
             // FormMain
             // 
@@ -220,7 +221,7 @@
             Controls.Add(panel1);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 6 | Вариант 11 | Кучук И.А.";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             groupBoxTask_KIA.ResumeLayout(false);

@@ -196,6 +196,7 @@
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 5 | Вариант 11 | Кучук И.А.";
+            Load += FormMain_Load;
             panel1.ResumeLayout(false);
             groupBoxTask_KIA.ResumeLayout(false);
             groupBoxTask_KIA.PerformLayout();

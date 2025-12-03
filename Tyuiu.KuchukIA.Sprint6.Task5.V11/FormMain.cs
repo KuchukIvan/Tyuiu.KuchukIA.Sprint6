@@ -47,5 +47,10 @@ namespace Tyuiu.KuchukIA.Sprint6.Task5.V11
         {
             MessageBox.Show("Таск 5 выполнил студент группы ПИНб-25-1 Кучук Иван Александрович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
